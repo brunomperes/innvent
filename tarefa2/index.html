@@ -91,9 +91,11 @@
     if (  $('#name').hasClass('valid') &&
           $('#email').hasClass('valid') &&
           $('#password').hasClass('valid') &&
-          $('#confirm_password').hasClass('valid')   ) {
+          $('#confirm_password').hasClass('valid')   ){
+      
+      window.location.reload();
     }
-      alert('radical');
+      
     })
 
     $(".admin").click(function() {
