@@ -1,11 +1,3 @@
-// 
-//	jQuery Validate example script
-//
-//	Prepared by David Cochran
-//	
-//	Free for your use -- No warranties, no guarantees!
-//
-
 $(document).ready(function(){
 
 	// Validate
@@ -13,7 +5,7 @@ $(document).ready(function(){
 	// http://docs.jquery.com/Plugins/Validation/
 	// http://docs.jquery.com/Plugins/Validation/validate#toptions
 	
-		$('#contact-form').validate({
+		$('#form').validate({
 	    rules: {
 	      name: {
 	        minlength: 3,
@@ -23,12 +15,12 @@ $(document).ready(function(){
 	        required: true,
 	        email: true
 	      },
-	      subject: {
-	      	minlength: 2,
+	      password: {
+	      	minlength: 6,
 	        required: true
 	      },
-	      message: {
-	        minlength: 5,
+	      confirm_password: {
+	      	equalTo: "#password",
 	        required: true
 	      }
 	    },
@@ -43,5 +35,5 @@ $(document).ready(function(){
 			// $(label).closest('.control-group').addClass('success');
 	    }
 	  });
-	  
+
 }); // end document.ready

@@ -29,30 +29,46 @@
         
         <div class="row-fluid">
         <div class="span6 well offset3">
-          <form id="contact-form" action="" method="post" class="form-horizontal" novalidate="novalidate">
+          <form id="form" action="" method="post" class="form-horizontal" novalidate="novalidate">
             <fieldset>
               <div class="control-group">
-                <label class="control-label" for="name">Nome</label>
+                <label class="control-label" for="name">Nome <span class="req">*<span></label>
                 <div class="controls">
                   <input type="text" class="input-xlarge" name="name" placeholder="Nome" id="name">
                 </div>
               </div>
               <div class="control-group">
-                <label class="control-label" for="email">E-mail</label>
+                <label class="control-label" for="email">E-mail <span class="req">*<span></label>
                 <div class="controls">
                   <input type="text" class="input-xlarge" name="email" placeholder="E-mail" id="email">
                 </div>
               </div>
               <div class="control-group">
-                <label class="control-label" for="password">Senha</label>
+                <label class="control-label" for="password">Senha <span class="req">*<span></label>
                 <div class="controls">
                   <input type="password" class="input-xlarge" name="password" placeholder="Senha" id="password">
                 </div>
               </div>
               <div class="control-group">
-                <label class="control-label" for="confirm-password">Confirmar senha</label>
+                <label class="control-label" for="confirm_password">Confirmar senha <span class="req">*<span></label>
                 <div class="controls">
-                  <input type="password" class="input-xlarge" name="confirm-password" placeholder="Confirmar senha" id="confirm-password">
+                  <input type="password" class="input-xlarge" name="confirm_password" placeholder="Confirmar senha" id="confirm_password">
+                </div>
+              </div>
+              <div class="offset4">
+                <label class="checkbox">
+                  <input type="checkbox" class="admin" value="administrador">
+                  Administrador
+                </label>
+                <div class="optional">
+                  <label class="radio">
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="perfil1" checked>
+                    Perfil 1
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="perfil2">
+                    Perfil 2
+                  </label>
                 </div>
               </div>
               <button type="submit" class="btn offset8 btn-primary" id="submit-form">Enviar</button>
@@ -67,19 +83,30 @@
     ================================================== -->
     <script language="javascript" type="text/javascript">     
     </script>
-    <script src="js/jquery-latest.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script language="javascript" type="text/javascript">
     $('#submit-form').click(function(){  
     
     if (  $('#name').hasClass('valid') &&
-          $('#message').hasClass('valid') &&
-          $('#subject').hasClass('valid') &&
-          $('#email').hasClass('valid')   )
-      enviarEmail();    
+          $('#email').hasClass('valid') &&
+          $('#password').hasClass('valid') &&
+          $('#confirm_password').hasClass('valid')   ) {
+    }
+      window.location.reload();
+    })
+
+    $(".admin").click(function() {
+      if ($(this).is(':checked')) {
+        $(".optional").show();
+      }
+      else {
+        $(".optional").hide();
+      }
     });
     </script>
-    <script src="js/jquery.validate.pt.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/form.js"></script>
 
 </body>
 </html>
