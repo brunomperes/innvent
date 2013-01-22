@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Formulário Bootstrap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-language" content="pt-br">
+  <meta name="description" content="">
+  <meta name="author" content="Bruno Peres">
+  <meta name="keywords" content="">
+
+  <!-- styles -->
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+
+  <body>
+  
+    <div class="container-fluid">
+        
+        <div class="row-fluid">
+        <div class="span6 well offset3">
+          <form id="contact-form" action="" method="post" class="form-horizontal" novalidate="novalidate">
+            <fieldset>
+              <div class="control-group">
+                <label class="control-label" for="name">Nome</label>
+                <div class="controls">
+                  <input type="text" class="input-xlarge" name="name" placeholder="Nome" id="name">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="email">E-mail</label>
+                <div class="controls">
+                  <input type="text" class="input-xlarge" name="email" placeholder="E-mail" id="email">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="password">Senha</label>
+                <div class="controls">
+                  <input type="password" class="input-xlarge" name="password" placeholder="Senha" id="password">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="confirm-password">Confirmar senha</label>
+                <div class="controls">
+                  <input type="password" class="input-xlarge" name="confirm-password" placeholder="Confirmar senha" id="confirm-password">
+                </div>
+              </div>
+              <button type="submit" class="btn offset8 btn-primary" id="submit-form">Enviar</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    
+    </div>
+
+    <!-- javascript
+    ================================================== -->
+    <script language="javascript" type="text/javascript">     
+    </script>
+    <script src="js/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script language="javascript" type="text/javascript">
+    $('#submit-form').click(function(){  
+    
+    if (  $('#name').hasClass('valid') &&
+          $('#message').hasClass('valid') &&
+          $('#subject').hasClass('valid') &&
+          $('#email').hasClass('valid')   )
+      enviarEmail();    
+    });
+    </script>
+    <script src="js/jquery.validate.pt.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'myriadpro';
+    src: url('../fonts/myriadpro-cond-webfont.eot');
+    src: local('myriadpro'), url('myriadpro-cond-webfont.ttf') format('truetype');
+}
+
+body {
+	font-family: 'myriadpro', arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height:normal;
+}
+
+.menu {
+	text-transform:uppercase;
+}

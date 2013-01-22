@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt">  
+<head>    
+  <meta charset="utf-8">
+  <title>Lorem Ipsum</title>    
+  <meta http-equiv="content-language" content="pt-br" />
+  <meta name="description" content="Lorem Ipsum"/>
+  <meta name="author" content="Bruno Peres">
+  <meta name="keywords" content="lorem, ipsum"/>
+  <!-- styles -->
+  <link href="css/layout.css" rel="stylesheet">
+</head>
+
+<body>    
+  <div class="top-stripe">
+    <div class="social">
+      <ul class="nav">
+        <li id="facebook" class=""><a href=""><img src="images/bt-media.png"></a></li>
+        <li id="linkedin" class=""><a href=""><img src="images/bt-media.png"></a></li>
+        <li id="twitter" class=""><a href=""><img src="images/bt-media.png"></a></li>
+        <li id="contato" class=""><a href="">CONTATO</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="header">
+    <div class="logo">
+      <img src="images/logo.jpg" alt=""/>
+    </div>
+    <div class="menu">
+      <ul> <!-- todo: sub-menu -->
+        <li>Quem Somos</li> 
+        <li>Consultoria</li>
+        <li>Educação Executiva</li>
+        <li>Soluções</li>
+        <li>Clientes</li>
+        <li>Conhecimento</li>
+      </ul>
+    </div>
+
+    <div class="slider">
+      <div class="place-holder">
+        <img src="images/slider01.jpg"/>
+      </div>
+      <div class="navegation">
+        <img src="images/bt-uncheck.png">
+        <img src="images/bt-uncheck.png">
+        <img src="images/bt-uncheck.png">
+        <img src="images/bt-uncheck.png">
+      </div>
+    </div>
+
+    <div class="main">
+
+      <div class="info">
+        <div id="info1">
+          <div id="top">
+            <img src="images/filete-pattern.jpg">
+          </div>
+          <div class="content">
+            <div class="title">
+              <p>Assessment de Governança de TI</p>
+            </div>
+            <img src="images/assessment.jpg">
+            <div class="details">
+              <p>O Planejamento Estratégico da TI (PETI) permite a projeção da TI  de forma a suportar a estratégia e os processos do Negócio.</p>
+            </div>
+            <div class="readmore">
+              <a href="">Leia mais <img src="images/arrow-right.jpg"> </a>
+            </div>
+          </div> <!-- /content -->
+        </div> <!-- /info1 -->
+        <div id="info2">
+          <div id="top">
+            <img src="images/filete-pattern.jpg">
+          </div>
+          <div class="content">
+            <div class="title">
+              <p>Treinamentos de Governança de TI</p>
+            </div>
+            <img src="images/treinamentos.jpg">
+            <div class="details">
+              <p>O Planejamento Estratégico da TI (PETI) permite a projeção da TI  de forma a suportar a estratégia e os processos do Negócio.</p>
+            </div>
+            <div class="readmore">
+              <a href="">Leia mais <img src="images/arrow-right.jpg"> </a>
+            </div>
+          </div> <!-- /content -->
+        </div>
+        <div id="info3">
+          <div id="top">
+            <img src="images/filete-pattern.jpg">
+          </div>
+          <div class="content">
+            <div class="title">
+              <p>Implante Melhorias para TI com ITIL</p>
+            </div>
+            <img src="images/implante.jpg">
+            <div class="details">
+              <p>O Planejamento Estratégico da TI (PETI) permite a projeção da TI  de forma a suportar a estratégia e os processos do Negócio.</p>
+            </div>
+            <div class="readmore">
+              <a href="">Leia mais <img src="images/arrow-right.jpg"> </a>
+            </div>
+          </div> <!-- /content -->
+        </div>
+
+        <div class="updates">
+          <p>Atualizações</p><img src="images/filete-pattern.jpg">
+          <div class="blog">
+            <img src="images/icon-dialog.png"><p>Blog</p>
+            <dl>
+              <dt>Seg, 12 de Março de 2012</dt>
+              <dd>
+                <p>Novo artigo disponível para download sobre o CSC e a Governança de TI</p>
+                <p class="author">Escrito por <a href="">Lorem</a></p>
+              </dd>
+              <dt>Ter, 06 de Março de 2012</dt>
+              <dd>
+                <p>A Migração da RI para o Centro de Serviços Compartilhados: boa prática?</p>
+                <p class="author">Escrito por <a href="">Lorem</a></p>
+              </dd>
+              <dt>Ter, 28 de Fevereiro de 2012</dt>
+              <dd>
+                <p>Valor do ITIL para as empresas: conformidade de processos ou melhoria nos serviços</p>
+                <p class="author">Escrito por <a href="">Lorem</a></p>
+              </dd>
+            </dl>
+          </div>
+          <div class="twitter">
+            <img src="images/icon-twitter.png"><p>Twitter</p>
+            <div class="tweets">
+              <div class="tweet1">
+
+              </div>
+            </div>
+          </div>
+        </div> <!-- /updates -->
+      </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script language="javascript" type="text/javascript">
+      //Ativa o botão de navegação corrente baseado no nome do arquivo atual
+      var url = window.location.pathname;
+      var filename = url.substring(url.lastIndexOf('/')+1);
+
+      if (filename.length == 0 || filename.indexOf("index") != -1){
+        document.getElementById("navBio").className += "active";
+      }
+      else if (filename.indexOf("workshop") != -1){
+        document.getElementById("navWorkshops").className += "active";
+      }
+      else if(filename.indexOf("portfolio") != -1){
+        document.getElementById("navPortfolio").className += "active";
+      }
+      else if(filename.indexOf("curiosities") != -1){
+        document.getElementById("navCuriosidades").className += "active";
+      }
+      else if(filename.indexOf("contact") != -1){
+        document.getElementById("navContato").className += "active";
+          }      
+    </script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
