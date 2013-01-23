@@ -8,6 +8,7 @@
   <meta name="author" content="Bruno Peres">
   <meta name="keywords" content="lorem, ipsum"/>
   <link href="css/normalize.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/orbit-1.2.3.css">
   <link href="css/layout.css" rel="stylesheet">
 </head>
 
@@ -27,8 +28,8 @@
     <div class="logo">
       <a href=""><img src="images/logo.jpg" alt=""/></a>
     </div>
-    <div class="menu">
-      <ul class="row"> <!-- todo: sub-menu -->
+    <div class="row">
+      <ul class="row menu">
         <li><a href="">Conhecimento</a></li>
         <li><a href="">Clientes</a></li>
         <li><a href="">Soluções</a></li>
@@ -47,35 +48,11 @@
   </div>
 
     <div class="slider">
-      <div id="products_example">
-      <div id="products">
-        <div class="slides_container">
-          <a href="" target="_blank"><img src="images/slider01.jpg" width="366" alt="1144953 3 2x"></a>
-          <a href="" target="_blank"><img src="images/slider01.jpg" width="366" alt="1144953 1 2x"></a>
-          <a href="" target="_blank"><img src="images/slider01.jpg" width="366" alt="1144953 2 2x"></a>         
-          <a href="" target="_blank"><img src="images/slider01.jpg" width="366" alt="1144953 4 2x"></a>
-        </div>
-        <ul class="pagination">
-          <li><a href="#"><img src="img/1144953-3-2x.jpg" width="55" alt="1144953 3 2x"></a></li>
-          <li><a href="#"><img src="img/1144953-1-2x.jpg" width="55" alt="1144953 1 2x"></a></li>
-          <li><a href="#"><img src="img/1144953-2-2x.jpg" width="55" alt="1144953 2 2x"></a></li>
-          <li><a href="#"><img src="img/1144953-4-2x.jpg" width="55" alt="1144953 4 2x"></a></li>
-          <li><a href="#"><img src="img/1144953-5-2x.jpg" width="55" alt="1144953 5 2x"></a></li>
-          <li><a href="#"><img src="img/1144953-6-2x.jpg" width="55" alt="1144953 6 2x"></a></li>
-          <li><a href="#"><img src="img/1144953-p-2x.jpg" width="55" alt="1144953 P 2x"></a></li>
-        </ul>
-      </div>
-    </div>
-      <div class="sliderholder" id="slideshowHolder">
-       <img src="images/slider01.jpg" alt="" />
-       <img src="images/slider02.jpg" alt="" />
-       <img src="images/slider03.jpg" alt="" />
-      </div>
-      <div class="slider-btn">
-        <a href=""><img src="images/bt-check.png"></a>
-        <a href=""><img src="images/bt-uncheck.png"></a>
-        <a href=""><img src="images/bt-uncheck.png"></a>
-        <a href=""><img src="images/bt-uncheck.png"></a>
+      <div id="featured"> 
+        <a href=""><img src="images/slider01.jpg" data-caption="" /></a>
+        <a href=""><img src="images/slider02.jpg" data-caption="" /></a>
+        <a href=""><img src="images/slider03.jpg" data-caption="" /></a>
+        <a href=""><img src="images/slider04.jpg" data-caption="" /></a>
       </div>
     </div>
 
@@ -171,20 +148,23 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/jqFancyTransitions.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.orbit-1.2.3.js"></script> 
     <script language="javascript" type="text/javascript">
-    $(function(){
-      $('#products').slides({
-        preload: true,
-        preloadImage: 'img/loading.gif',
-        effect: 'slide, fade',
-        crossfade: true,
-        slideSpeed: 350,
-        fadeSpeed: 500,
-        generateNextPrev: true,
-        generatePagination: false
-      });
-    });;
+      $('#featured').orbit({
+         animation: 'fade',                  // fade, horizontal-slide, vertical-slide, horizontal-push
+         animationSpeed: 800,                // how fast animtions are
+         timer: false,        // true or false to have the timer
+         advanceSpeed: 4000,     // if timer is enabled, time between transitions 
+         pauseOnHover: false,      // if you hover pauses the slider
+         startClockOnMouseOut: false,    // if clock should start on MouseOut
+         startClockOnMouseOutAfter: 1000,    // how long after MouseOut should the timer start again
+         directionalNav: false,     // manual advancing directional navs
+         captions: false,       // do you want captions?
+         bullets: true,       // true or false to activate the bullet navigation
+         bulletThumbs: false,    // thumbnails for the bullets
+         bulletThumbLocation: 'images/',    // location from this file where thumbs will be
+         afterSlideChange: function(){}    // empty function 
+    });
     </script>
     <script src="js/script.js"></script>
 
