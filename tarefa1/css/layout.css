@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'myriadpro';
     src: url('../fonts/myriadpro-cond-webfont.eot');
-    src: local('myriadpro'), url('myriadpro-cond-webfont.ttf') format('truetype');
+    src: local('myriadpro'), url('../fonts/myriadpro-cond-webfont.ttf') format('truetype');
 }
 
 body {
@@ -9,8 +9,158 @@ body {
 	font-weight: normal;
 	font-style: normal;
 	line-height:normal;
+	margin: 0;
+	padding: 0;
 }
 
 .menu {
 	text-transform:uppercase;
+}
+
+.media_icon {
+	display: block;
+	width: 15px;
+	height: 15px;
+	background-image: url(../images/bt-media.png);
+	background-repeat: no-repeat;
+}
+
+.facebook_icon {
+	background-position: 1px 2px;
+}
+.facebook_icon:hover {
+	background-position: 1px -14px;
+}
+
+.linkedin_icon {
+	background-position: -15px 2px;
+}
+.linkedin_icon:hover {
+	background-position: -15px -14px;
+}
+
+.twitter_icon {
+	background-position: -31px 2px;
+}
+.twitter_icon:hover {
+	background-position: -31px -14px;
+}
+
+.header {
+	height: 100px;
+	padding-top: 40px;
+	padding-left: 5%;
+}
+
+.media li{
+	float: right;
+	padding-right: 20px;
+}
+.media a{
+	color: #5f6063;
+}
+
+.nav li{
+	display: inline;
+	/*list-style-type: none;
+	padding-right: 20px;
+	width: 30px;
+	background-color: gray;*/
+}
+
+a:active,
+a:link, 
+a:visited, 
+a:focus,
+a:hover {
+	text-decoration: none
+}
+
+.top-stripe {
+	height: 15px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	background-color: #33363b;
+}
+
+.row li {
+	display: inline;
+}
+
+.logo {
+	float: left;
+}
+
+.menu{
+	margin-right: 3%;
+}
+.menu li{
+	float: right;
+	list-style-type: none;
+	padding: 20px;
+}
+.menu a {
+	color: black;
+}
+.menu a:hover {
+	color: #cbd9de;
+}
+
+.slider{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 15px
+}
+
+.slider-btn{
+	text-align: center;
+}
+
+.main{
+	background-color: #f0f0ee;
+	padding: 30px;
+	display: table;
+	width: 100%;
+}
+
+.info{
+	width: 30%;
+	margin: 20px;
+	float:left;
+	position: relative;
+}
+
+.top{
+	width: 100%;
+	height: 30px;
+	background-image:url('../images/filete-pattern.jpg');
+	background-repeat:repeat-y;
+}
+
+.submenu li {
+	background-color: #677484;
+	color: #929fab;
+	text-transform: none;
+	padding: 4px;
+	opacity:0.65;
+	-moz-opacity: 0.65;
+	filter: alpha(opacity=65);
+	display: none;
+}
+
+.submenu li:hover{
+	opacity:1;
+}
+.submenu a {
+	color: #cbd9de;
+}
+.submenu a:hover {
+	color: #9f8e42;
+}
+
+#slideshowHolder{
+	text-align: center;
+}
+.sliderholder{
+text-align: center;	
 }

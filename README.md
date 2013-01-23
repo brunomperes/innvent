@@ -1,6 +1,6 @@
 Autor: Bruno Maciel Peres
 
-- Tarefa 2
+#Tarefa 2
 Versão Bootstrap: 2.2.2
 Plugin jQuery: jQuery Validate
 Regras de validação:
