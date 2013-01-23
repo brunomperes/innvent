@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<style type="text/css">
+
+body { font: normal 62.5% verdana; }
+
+ul#primary-nav,
+ul#primary-nav ul {
+margin: 0;
+padding: 0;
+/* width: 600px; */ /* Width of Menu Items */
+border-bottom: 0px; solid #ccc;
+background: #fff; /* IE6 Bug */
+/* background: blue; /* IE6 Bug */ cor do fundo dos menus
+font-size: 100%;
+}
+
+ul#primary-nav li {
+position: relative;
+list-style: none;
+display: inline;
+float:left;
+}
+
+ul#primary-nav li a {
+display: block;
+text-decoration: none;
+float:left;
+color: black;
+/* color: red; cor das letras do menu */
+padding: 5px;
+border: 1px solid #f3f3f3;
+border-bottom: 1;
+}
+
+/* Fix IE. Hide from IE Mac \*/
+* html ul#primary-nav li { float: left; height: 1%; }
+* html ul#primary-nav li a { height: 1%; }
+/* End */
+
+ul#primary-nav ul {
+position: absolute;
+display: none;
+left: 0px; /* Set 1px less than menu width */
+top: 23px;
+}
+
+ul#primary-nav li ul li a { padding: 2px 5px; } /* Sub Menu Styles */
+
+ul#primary-nav li:hover ul ul ,
+ul#primary-nav li:hover ul ul ul,
+ul#primary-nav li.over ul ul,
+ul#primary-nav li.over ul ul ul { display: none; top: 17px;} /* Hide sub-menus initially */
+
+ul#primary-nav li:hover ul,
+ul#primary-nav li li:hover ul,
+ul#primary-nav li li li:hover ul,
+ul#primary-nav li.over ul,
+ul#primary-nav li li.over ul,
+ul#primary-nav li li li.over ul { display: block; } /* The magic */
+
+ul#primary-nav li.menuparent { background: transparent url(arrow-down.gif) right center 
+
+no-repeat; } 
+/* ul#primary-nav li.menuparent { background: yellow url(arrow-down.gif) right center 
+
+no-repeat; } Cor dos que tem o -> */
+
+ul#primary-nav li.menuparent:hover,
+ul#primary-nav li.over { background-color: #f9f9f9; }
+/*ul#primary-nav li.over { background-color: blue } cor da selecao quando tem submenu */
+
+ul#primary-nav li a:hover { color: #999999; }
+/*ul#primary-nav li a:hover { color: blue; background-color: blue} cor da letra dos menus 
+
+com selecao / cor do fundo */
+
+</style>
+</head>
+
+<body>
+
+<ul id="primary-nav">
+<li><a href="#">Principal</a></li>
+
+<li class="menuparent"><a href="#">GRUPO 1</a> 
+<ul>
+<li><a href="#">LINK 1</a></li>
+<li><a href="#">LINK 2</a></li>
+<li><a href="#">LINK 3</a></li>
+</ul>
+</li>
+
+<li class="menuparent"><a href="#">GRUPO 2</a> 
+<ul>
+<li><a href="#">LINK 1</a></li>
+<li><a href="#">LINK 2</a></li>
+<li><a href="#">LINK 3</a></li>
+</ul>
+</li>
+
+</ul>
+</li>
+</ul>
+
+</body>
+</html>
