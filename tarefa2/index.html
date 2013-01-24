@@ -88,16 +88,16 @@
     <script language="javascript" type="text/javascript">
     $('#submit-form').click(function(){  
     
+    //Checks if all fields are valid
     if (  $('#name').hasClass('valid') &&
           $('#email').hasClass('valid') &&
           $('#password').hasClass('valid') &&
-          $('#confirm_password').hasClass('valid')   ){
-      
+          $('#confirm_password').hasClass('valid')   ){ 
       window.location.reload();
     }
-      
     })
 
+    //Shows/hide radio options
     $(".admin").click(function() {
       if ($(this).is(':checked')) {
         $(".optional").show();
