@@ -202,3 +202,27 @@ a:checked, a:hover, a:visited {
 	float: left;
 	display: inline;
 }
+
+dd{
+	margin: 0;
+}
+dt{
+	font-weight: bold;
+	color: 
+}
+
+.post{
+	margin-bottom: 1px;
+	margin-top: 1px;
+}
+.blog a:hover{
+	text-decoration: underline;
+}
+.blog a:visited{
+	color: #b2c7cf;
+}
+.author{
+	font-size: small;
+	margin-top: 2px;
+	margin-bottom: 14px;
+}
