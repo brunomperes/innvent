@@ -69,10 +69,10 @@ ul.menu {
 
 .nav li{
 	display: inline;
-	/*list-style-type: none;
+	list-style-type: none;
 	padding-right: 20px;
 	width: 30px;
-	background-color: gray;*/
+	background-color: gray;
 }
 
 a:active,
@@ -193,9 +193,6 @@ ul.submenu li li li.over ul {
 	padding: 5px;
 	width: 60px;
 	float: right;
-}
-a:checked, a:hover, a:visited {
-	/*color: white;*/
 }
 
 #atualizacoes{
