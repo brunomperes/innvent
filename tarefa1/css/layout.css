@@ -13,7 +13,7 @@ body {
 	padding: 0;
 }
 
-.menu {
+ul.menu {
 	text-transform:uppercase;
 }
 
@@ -107,13 +107,9 @@ a:hover {
 }
 
 .slider{
-	width: 100%;
 	text-align: center;
-	margin-bottom: 15px
-}
-
-.slider-btn{
-	text-align: center;
+	margin-left: 15%;
+	margin-bottom: 50px
 }
 
 .main{
@@ -124,15 +120,24 @@ a:hover {
 }
 
 .info{
-	width: 30%;
 	margin: 20px;
-	float:left;
+	float: left;
 	position: relative;
+	margin-left: 15% ;
+  	margin-right: auto ;
 }
 
-.top{
+#info_holder {
+	float: left;
+	width: 304px;
+	display: inline;
+	margin-bottom:40px;
+	padding: 10px;
+}
+
+#top{
 	width: 100%;
-	height: 30px;
+	height: 18px;
 	background-image:url('../images/filete-pattern.jpg');
 	background-repeat:repeat-x;
 }
@@ -174,9 +179,26 @@ ul.submenu li li li.over ul {
 	color: #9f8e42;
 }
 
-#slideshowHolder{
-	text-align: center;
+.title {
+	font-weight: bold;
+	font-size: larger;
 }
-.sliderholder{
-text-align: center;	
+
+.light-blue{
+	color: #b2c7cf;
+}
+
+.readmore{
+	background-color: #677484;
+	padding: 5px;
+	width: 60px;
+	float: right;
+}
+a:checked, a:hover, a:visited {
+	/*color: white;*/
+}
+
+#atualizacoes{
+	float: left;
+	display: inline;
 }

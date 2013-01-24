@@ -6,7 +6,7 @@
  
  
  
-/* PUT IN YOUR SLIDER ID AND SIZE TO MAKE LOAD BEAUTIFULLY
+/* PUT fIN YOUR SLIDER ID AND SIZE TO MAKE LOAD BEAUTIFULLY
    ================================================== */
 #featured { 
 	width: 940px;
@@ -26,7 +26,8 @@
 div.orbit-wrapper {
     width: 1px;
     height: 1px;
-    position: relative; }
+    position: relative;
+    text-align: center; }
 
 div.orbit {
     width: 1px;
